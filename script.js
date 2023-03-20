@@ -4,7 +4,13 @@ function changeColour(colour) {
     square.style.background = colour;
 }
 
-square.addEventListener('click, (event) => changeColour('green'));
+function clicked() {
+    //var msg = "Build a<br>" +createBuzzwordPhrase();
+    //words.innerHTML = msg;
+    words.innerHTML = "Build a<br>" +createBuzzwordPhrase();
+}
+
+square.addEventListener('click, (event) => clicked());
 
 /*create hover effect */
 square.addEventListener('mouseover', (event) => changeColour('grey'));
